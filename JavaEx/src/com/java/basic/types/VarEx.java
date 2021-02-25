@@ -1,5 +1,5 @@
 package com.java.basic.types;
-
+import java.util.Scanner;
 public class VarEx {
 
 	public static void main(String[] args) {
@@ -16,7 +16,9 @@ public class VarEx {
 		int v1 =10, v2=20,v3=30;
 		String b="a";
 		
-		
+		Scanner scan = new Scanner(System.in);
+		String a= scan.next();
+		System.out.println(a);
 	}
 
 }
