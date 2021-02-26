@@ -1,0 +1,18 @@
+package com.java.basic.types;
+
+//char(2)
+//유니코드 캐릭터 1글자
+public class charEx {
+
+	public static void main(String[] args) {
+		char c1 ='A';
+		char c2= '한';
+		System.out.println(c1);
+		System.out.println(c2);
+		
+		System.out.println(c1 +c2);
+		String st ="A한";
+		System.out.println(st);
+	}
+
+}
