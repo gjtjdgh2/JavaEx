@@ -19,11 +19,16 @@ public class LoopEx {
 
 	private static void sixRadom() {
 		//1~45난수 
-		for(int i=1;i<=6;++i) {
-			System.out.println((int)(Math.random()*45)+1);
-		}
+		//for(int i=1;i<=6;++i) {
+		//	System.out.println((int)(Math.random()*45)+1);
+		//}
 		
 		//while 버전 만들어 보기
+		int i=1;
+		while(i<=6) {
+			System.out.println((int)(Math.random()*45)+1);
+			++i;
+		}
 	}
 	
 	private static void nestForStar() {
@@ -35,8 +40,9 @@ public class LoopEx {
 		}*/
 		//while 버전
 		int row=6;
-		int i=1,j=1;
-		while(i <=6) {
+		int i=1;
+		while(i <=row) {
+			int j=1;
 			while(j<=i) {
 			System.out.print("*");
 			++j;
