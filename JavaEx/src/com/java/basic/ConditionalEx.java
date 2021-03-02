@@ -25,7 +25,7 @@ public class ConditionalEx {
 			System.out.println(point+"은 3의 배수가 아닙니다");
 		}
 		*/
-		//System.out.println(point+"는"+ point % 3==0 ? "2의 배수입니다":point+"은 3의 배수가 아닙니다");
+		System.out.println(point+"는"+ (point % 3 == 0 ? "3의 배수입니다":point+"은 3의 배수가 아닙니다"));
 		scan.close();
 	}
 	
