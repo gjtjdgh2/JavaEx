@@ -39,6 +39,7 @@ public class operEx {
 	}
 	// 비트 연산자(&,|,^)  , int 에만 적용
 	private static void bitOperEx() {
+		
 int b1= 13,b2= 7;
 System.out.println(Integer.toBinaryString(b1));
 System.out.println(Integer.toBinaryString(b2));

@@ -1,12 +1,24 @@
 package com.java.basic;
 
+import java.util.Scanner;
+
 public class ConsoleEx {
 
 	public static void main(String[] args) {
-		consoleOutputEx();
-		
+		//consoleOutputEx();
+		ScannerEx();
 	}
-
+	//콘설 입력
+	private static void ScannerEx() {
+		// 이름과 나이를 입력 받아 출력 하기
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("이름은? ");
+		String name = scanner.next();
+		System.out.println("나이는?");
+		int age = scanner.nextInt();
+		System.out.println("당신의 이름은 "+name+" 나이는 "+age+"입니다");
+		scanner.close(); 
+	}
 		//콘솔 출력
 	private static void consoleOutputEx() {
 		//표준 출력(stdout) :Sytem.sout
@@ -23,4 +35,5 @@ public class ConsoleEx {
 		System.out.print("World \n");
 		System.out.println("World\" JAVA \"");
 	}
+	
 }
