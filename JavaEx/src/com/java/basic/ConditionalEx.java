@@ -11,8 +11,8 @@ public class ConditionalEx {
 		//ifPractice();
 		//switchEx();
 		//switchEx2();
-		//switchEx3();
-		test();
+		switchEx3();
+		//test();
 	}
 	private static void test() {
 		Scanner scan = new Scanner(System.in);
@@ -32,7 +32,7 @@ public class ConditionalEx {
 	private static void switchEx3() {
 		String day = "WED";
 		String message;
-		/*switch(day) {
+		switch(day) {
 		case "SUN":
 			message = "일용일";
 			break;
@@ -50,8 +50,8 @@ public class ConditionalEx {
 			break;
 		default:
 			message = "?";
-		}*/
-		System.out.println();
+		}
+		System.out.println(message);
 	}
 	
 	private static void switchEx2() {
