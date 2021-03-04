@@ -5,8 +5,8 @@ public class Goods {
 	//필드
 	 
 	//public>protected<default<private
-	 private String name;
-	 private int price;
+	 protected String name;
+	 protected int price;
 	
 
 	
