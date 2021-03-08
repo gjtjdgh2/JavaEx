@@ -26,6 +26,12 @@ public class ArraysEx {
 		System.out.println("원본: "+Arrays.toString(member));
 //		int index = Arrays.binarySearch(member, new Member("홓길동"),
 //				new Comparable<Member>() {
+//
+//					@Override
+//					public int compareTo(Member o) {
+//						
+//						return 0;
+//					}
 //			
 //		});
 		//System.out.println("홓길동 검색: "+index);
