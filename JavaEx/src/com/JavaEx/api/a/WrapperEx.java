@@ -40,6 +40,11 @@ public class WrapperEx {
 		System.out.println("값의 비교(언박싱) "+(i4.intValue() == i5.intValue()));
 		System.out.println("값의 비교(equals) "+i4.equals(i5));
 		
+		
+		Integer ii= 10;
+		System.out.println(ii);
+		int n= ii+10;
+		System.out.println(n);
 	}
 
 }
