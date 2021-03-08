@@ -4,7 +4,41 @@ public class stringEx {
 
 	public static void main(String[] args) {
 		//stringbasic();
-		usefulMethods();
+		//usefulMethods();
+		stringBuffer();
+	}
+	
+	private static void stringBuffer() {
+		//String 가 불변인거에 비해 ,버퍼는 가변으로 변할수있다(내부데이터 변경가능)
+		StringBuffer sb= new StringBuffer("This ");
+		
+	
+		//문자열 연결 append
+		sb.append("is pencil");
+		
+		//문자열 삽입 insert
+		sb.insert(8, "my ");
+		
+		//문자열 대처(바꿈)
+		sb.replace(8, 10, "Your");
+		
+		System.out.println("최종 문자열 " + sb);
+		
+		//버퍼 위치 변경 : setLength
+		sb.setLength(10);
+		System.out.println("버퍼 조정: "+ sb);
+		
+		//메서드 세이닝 깃법
+		String s = new StringBuffer("This ")
+				.append("is pencil")
+				.insert(8, "my")
+				.replace(8, 10, "Your ")
+				.toString();
+		System.out.println("메서드 세이닝 "+s);
+		
+		
+		
+		
 	}
 	
 	public static void usefulMethods() {
