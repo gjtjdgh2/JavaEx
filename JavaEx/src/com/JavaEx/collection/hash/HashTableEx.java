@@ -1,6 +1,7 @@
 package com.JavaEx.collection.hash;
 
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.Map;
 
 public class HashTableEx {
@@ -29,6 +30,26 @@ public class HashTableEx {
 		
 		// 특정 키가 포함되어 있는가?
 		System.out.println("map has 202key ? "+map.containsKey("202"));
+		//특정 값이 포함되어 있는가?-> subject가 Java인 객체가 있는가
+		System.out.println("map has subject Java ? "+map.containsValue(new ClassRoom("Java")));
+		
+		//반복자 활용
+		Iterator<String> It = map.keySet().iterator();
+		while(It.hasNext()) {
+			ClassRoom item= map.get(It.next());
+			System.out.println(item);
+		}
+		
+		
+		
+		//삭제
+		map.remove("202");
+		System.out.println("MAP: "+map);
+		
+		
+		//비우기 
+		map.clear();
+		System.out.println("MAP: "+map);
 	}
 
 }
