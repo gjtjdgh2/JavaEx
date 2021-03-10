@@ -26,7 +26,7 @@ public class CharStreamEx {
 			
 			int data =0;
 			while((data = reader.read())!=-1) {
-				System.out.print((char)data);
+				System.out.print((char)data); //char으로 캐스팅
 			}
 		}catch(FileNotFoundException e) {
 			System.out.println("파일 찾지못함");
