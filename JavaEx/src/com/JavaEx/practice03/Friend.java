@@ -4,7 +4,7 @@ public class Friend {
 
 	private String name,hp,school;
 	public void show() {
-		System.out.println("이름: "+ name+"핸드폰: "+hp+"학교: "+school);
+		System.out.println("이름: "+ getName()+"핸드폰: "+getHp()+"학교: "+getSchool());
 	}
 	public String getName() {
 		return name;

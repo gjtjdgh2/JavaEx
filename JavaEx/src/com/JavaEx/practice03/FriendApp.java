@@ -13,15 +13,18 @@ public class FriendApp {
 		for(int i=0;i<3;i++) {
 //		friend[i] = scan.nextLine();
 			String line = scan.nextLine();
-			String chunk[] = line.split(" ");
-			for(int j =0;j<3;j++) {
-			friend[i].setName(chunk[j]);
-			}
+			String chunk[] = line.split(" "); // 0>1>2  >0>1>2 >0>1>2
+			 friend[i].setName(chunk[i]);
+			 friend[i].setHp(chunk[i+1]);
+			 friend[i].setSchool(chunk[i+2]);
+			
 		}
-		for(int i=0;i<3;i++) {
-			friend[i].show();
+		for(int j=0;j<3;j++) {
+			friend[j].show();
 		}
-
+	}	
 	}
+		
+	
 
-}
+
