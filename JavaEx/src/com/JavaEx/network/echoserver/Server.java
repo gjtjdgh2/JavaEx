@@ -32,6 +32,9 @@ public class Server {
 			//연결 대기
 			Socket socket = serversocket.accept();
 			
+			
+			//.......... Working Thread end
+			
 			//클라이언트 정보 확인
 			InetSocketAddress socketAddress= (InetSocketAddress)socket.getRemoteSocketAddress();//원격지 소켓
 			System.out.println("SERVER: 쿨라이언트 연결됨");
@@ -67,7 +70,7 @@ public class Server {
 				bw.write(message);
 				bw.close();
 			}
-			
+			//........ Working Thread logic end
 			
 			//후처리
 			System.out.println("SERVER: 서버 종료");
