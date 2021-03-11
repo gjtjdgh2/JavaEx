@@ -14,10 +14,11 @@ public class FriendApp {
 //		friend[i] = scan.nextLine();
 			String line = scan.nextLine();
 			String chunk[] = line.split(" "); // 0>1>2  >0>1>2 >0>1>2
-			 friend[i].setName(chunk[i]);
-			 friend[i].setHp(chunk[i+1]);
-			 friend[i].setSchool(chunk[i+2]);
+//			 friend[i].setName(chunk[0]);
+//			 friend[i].setHp(chunk[1]);
+//			 friend[i].setSchool(chunk[2]);
 			
+//			
 		}
 		for(int j=0;j<3;j++) {
 			friend[j].show();
