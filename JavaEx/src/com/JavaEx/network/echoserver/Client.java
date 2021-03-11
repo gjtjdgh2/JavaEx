@@ -12,6 +12,7 @@ import java.io.Writer;
 import java.net.ConnectException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class Client {
 
@@ -42,20 +43,38 @@ public class Client {
 			bw.write(message);
 			System.out.println("CLIENT: 전송 메시지: "+message);
 			bw.flush();
-			bw.close();
 			
-			//echo break 메시지 수신
+			
+//			//echo break 메시지 수신
 			InputStream is = socket.getInputStream();
 			Reader isr= new InputStreamReader(is);
 			BufferedReader br = new BufferedReader(isr);
+//			
+//			//메시지 수신
+//			String rcvmeg = br.readLine();
+//			System.out.println("수신 메시지: "+rcvmeg);
 			
-			//메시지 수신
-			String rcvmeg = br.readLine();
-			System.out.println("수신 메시지: "+rcvmeg);
+//			br.close();
 			
-			br.close();
+			//사용자로 부터 메시지 입력 받고 서버로 전달
+			Scanner scanner = new Scanner(System.in);
 			
-			
+			while(true) {
+				System.out.print("CILENT> ");
+				String messags = scanner.nextLine();
+				if(messags.equals("/q")) {
+					//탈출
+					System.out.println("CILENT: 접속 종료");
+					break;
+				}
+				System.out.println("CILENT: 메시지 전송: "+messags);
+				bw.write(messags);
+				bw.newLine();
+				bw.flush();
+				
+				String rcvmeg = br.readLine();
+				System.out.println("수신 메시지: "+rcvmeg);
+			}
 			
 			
 			
@@ -67,7 +86,7 @@ public class Client {
 			//후처리
 			System.out.println("클라이언트 종료");
 			
-			
+			bw.close();
 			
 		}
 		catch(ConnectException e) {
