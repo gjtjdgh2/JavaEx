@@ -14,7 +14,7 @@ public class CharStreamEx {
 	
 	
 	public static void main(String[] args) {
-		//writeTextEx();
+		writeTextEx();
 		readTextEx();
 
 	}
@@ -49,9 +49,9 @@ public class CharStreamEx {
 			writer =new FileWriter(filename);
 			
 			System.out.println("파일 열었습니다");
-			writer.write("Bit Computer\r\n");
-			writer.write("Java Programming\r\n");
-			writer.write("2021.03");
+			writer.write("Bit Comput2er\r\n");
+			writer.write("Java Progra2mming\r\n");
+			writer.write("2021.02");
 			System.out.println("파일 기록끝");
 			writer.flush();
 			
