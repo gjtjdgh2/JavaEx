@@ -30,8 +30,8 @@ public class subProject {
 			BufferedWriter bw = new BufferedWriter( writer );
 			
 			
-			bw.write(name+"\t");
-			bw.write(PH+"\t");
+			bw.write(name+",");
+			bw.write(PH+",");
 			bw.write(HH);
 			bw.newLine();
 			
