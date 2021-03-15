@@ -3,14 +3,14 @@ package com.JavaEx.miniProject;
 import java.io.File;
 import java.io.IOException;
 
-public class makeFile {
+public class AddressBookMakeFile {
 	private static String rootpath = System.getProperty("user.dir");
 	
 	
 		
 	
 	
-	public static void makeFile() {
+	public static void AddressBookMakeFile() {
 		File file = new File(rootpath);
 		System.out.println(rootpath+":"+file.exists());
 		if(!file.exists()) {

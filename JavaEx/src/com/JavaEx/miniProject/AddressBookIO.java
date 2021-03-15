@@ -1,10 +1,10 @@
 package com.JavaEx.miniProject;
 import java.util.*;
 
-public class IOProject {
+public class AddressBookIO {
 	
 public static void IOProject() {
-	subProject sub = new  subProject();
+	AddressBookSub sub = new  AddressBookSub();
 	while(true){
 		
 		System.out.println("1.리스트 2.등록 3.삭제 4.검색 5.종료");

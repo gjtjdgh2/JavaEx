@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.Reader;
 
-public class subProject {
+public class AddressBookSub {
 	
 	private static String rootpath = System.getProperty("user.dir") + "\\";
 	static final String filename= rootpath + "Phonenumber.txt";

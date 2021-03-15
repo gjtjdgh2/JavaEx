@@ -3,13 +3,13 @@ package com.JavaEx.miniProject;
 import java.io.*;
 
 
-public class MainProject {
+public class AddressBookMain {
 	
 	public static void main(String[] args) {
 		System.out.println(System.getProperty("user.dir"));
-		makeFile makefile = new makeFile();
-		makefile.makeFile();
-		IOProject iop = new  IOProject();
+		AddressBookMakeFile makefile = new AddressBookMakeFile();
+		makefile.AddressBookMakeFile();
+		AddressBookIO iop = new  AddressBookIO();
 		iop.IOProject();
 	
 	}
