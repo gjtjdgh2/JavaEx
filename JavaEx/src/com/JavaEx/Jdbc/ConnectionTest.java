@@ -14,7 +14,7 @@ public class ConnectionTest {
 			//드라이버 로드
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			//커넥션 확보
-			conn = DriverManager.getConnection(DBURL,DBUSER,DBPASS);
+			conn = DriverManager.getConnection(DBURL,DBUSER,DBPASS); //경로 , 아이디 ,비번
 			System.out.println("접속정보: "+conn);
 			System.out.println("접속성공");
 		}catch(ClassNotFoundException e) {
