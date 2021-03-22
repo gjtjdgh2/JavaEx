@@ -14,6 +14,11 @@ public class test {
 	System.out.println(scores[1].length);
 	System.out.println(sum);
 
+	int aaa = 1;
+	int asd = 2;
+	String a = "3df";
+	
+	System.out.println();
 
 	}
 
