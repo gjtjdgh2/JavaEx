@@ -56,8 +56,35 @@ public class AuthorDaoOraclelmpl implements AuthorDao {
 
 	@Override
 	public List<AuthorVo> search(String keyword) {
-		// TODO Auto-generated method stub
-		return null;
+		List<AuthorVo> list = new ArrayList<>();
+		Connection conn=null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		try {
+			conn = getConnection();
+			
+			String sql = " select id, name, bio from author where name like ?";
+			pstmt=conn.prepareStatement(sql);
+			pstmt.setString(1,"%"+keyword+"%");
+			
+			rs= pstmt.executeQuery();
+			
+			while(rs.next()) {
+				AuthorVo vo = new AuthorVo();
+				vo.setId(rs.getLong(1));
+				vo.setName(rs.getString(2));
+				vo.setBio(rs.getString(3));
+				list.add(vo);
+			}
+		}catch(SQLException e) {
+			e.printStackTrace();
+		
+			
+		}
+		
+		
+		
+		return list;
 	}
 
 	@Override

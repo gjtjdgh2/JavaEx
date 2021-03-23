@@ -11,7 +11,8 @@ public class AuthorApp {
 		
 		//insertAuthors(); //넣는거
 		//deleteAuthors(); //삭제
-		updateAuthors();
+		//updateAuthors();//수정
+		searchAuthors();//검색
 		listAuthors();
 	}
 	
@@ -72,4 +73,22 @@ public class AuthorApp {
 		System.out.println("Author updae:"+(success? "성공":"실패"));
 		scan.close();
 }
+	
+	private static void searchAuthors() {
+	Scanner scan = new Scanner(System.in);
+	System.out.print("검색어: ");
+	String keyword = scan.next();
+	
+	AuthorDao dao =new AuthorDaoOraclelmpl();
+	List<AuthorVo> list = dao.search(keyword);
+	
+	Iterator<AuthorVo> it = list.iterator();
+	
+	while(it.hasNext()) {
+		AuthorVo vo = it.next();
+		System.out.println(vo);
+	}
+		scan.close();
+	}
+	
 }

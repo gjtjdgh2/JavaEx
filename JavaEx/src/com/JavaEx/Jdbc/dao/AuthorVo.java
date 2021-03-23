@@ -9,7 +9,7 @@ public class AuthorVo {
 	private String name;
 	private String bio;
 	
-	public void AuthorVo() {
+	public AuthorVo() {
 	}
 	
 	public  AuthorVo(String name,String bio) {
