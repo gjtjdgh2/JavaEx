@@ -1,7 +1,7 @@
 package com.JavaEx.MiniProject2;
 
 public class PhoneBookVo {
-
+ 
 	private int id;
 	private String name;
 	private String hp;

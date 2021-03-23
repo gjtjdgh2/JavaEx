@@ -17,7 +17,7 @@ public static void ioProject() {
 		
 		int num = scan.nextInt();
 		switch(num) {
-		
+		 
 		case 1:System.out.println("<1.리스트>");
 		PhoneBookSub list = new PhoneBookSub();
 		list.listPhoneBook();

@@ -10,5 +10,5 @@ public interface PhoneBookDao {
 	public boolean insert(PhoneBookVo vo);
 	public boolean update(PhoneBookVo vo);
 	public boolean delete(int id);
-	
+	 
 }

@@ -10,7 +10,7 @@ import com.JavaEx.Jdbc.dao.AuthorVo;
 
 public class PhoneBookSub {
 
-	
+	 
 	public  void listPhoneBook() {
 		PhoneBookDao dao= new PhoneBookDaoOracle();
 		List<PhoneBookVo> list= dao.getList();

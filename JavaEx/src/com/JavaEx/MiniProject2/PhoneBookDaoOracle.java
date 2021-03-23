@@ -24,7 +24,7 @@ public class PhoneBookDaoOracle implements PhoneBookDao {
 		}
 		return conn;
 	}
-	
+	 
 	@Override // 리스트 보는것
 	public List<PhoneBookVo> getList() {
 		List<PhoneBookVo> list = new ArrayList<>();
