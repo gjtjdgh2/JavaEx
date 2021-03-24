@@ -12,6 +12,10 @@ public class PersonApp {
 		s2.showlnfo();
 		s2.showlnfo();
 
+		
+		
+		
+		
 	}
 
 }
